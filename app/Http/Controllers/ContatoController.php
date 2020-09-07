@@ -10,4 +10,5 @@ class ContatoController extends Controller
     public function index(){
         return 'Esse é o index Contato controler';
     }
+    
 }
