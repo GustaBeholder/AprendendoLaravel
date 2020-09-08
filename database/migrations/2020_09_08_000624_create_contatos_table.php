@@ -17,7 +17,7 @@ class CreateContatosTable extends Migration
             $table->id();
             $table->string('nome');
             $table->string('telefone');
-            $talbe->string('email');
+            $table->string('email');
             $table->timestamps();
         });
     }
