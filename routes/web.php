@@ -18,5 +18,17 @@ Route::get('/', function(){
 
 Route::get('contato',['uses'=>'ContatoController@index']);
 
+Route::get('/admin/cursos',['as'=>'admim.cursos', 'uses'=>'Admin\CursoController@index']);
+
+Route::get('/admin/cursos/adcionar',['as'=>'admin.cursos.adcionar', 'uses'=>'Admin\CursoController@adcionar']);
+
+Route::post('/admin/cursos/salvar', ['as'=>'admin.cursos.salvar', 'uses'=>'Admin\CursoController@salvar']);
+
+Route::get('/admin/cursos/atualiar/{id}',['as'=>'admin.cursos.atualizar', 'uses'=>'Admin\CursoController@atualizar']);
+
+Route::put('/admin/cursos/editar/{id}', ['as'=> 'admin.cursos.atualiar', 'uses'=>'Admin\CursoController@editar']);
+
+Route::get('admin/cursos/deletar/{id}', ['as'=>'admin.cursos.deletar', 'uses'=>'Admin\CursoController@deletar']);
+
 
 
