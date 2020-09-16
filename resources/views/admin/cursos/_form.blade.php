@@ -22,10 +22,15 @@
     <div class="file-path wrapper">
         <input class="file-path validate" type="text">
     </div>
+    @if(isset($registro->imagem))
+    <div class="input-field">
+        <img width = '150' src="{{asset('$registro->imagem')}}" alt="" />    
+    </div>
+    @endif
     <div class="input-field">
         <p>
             <label>
-              <input type="checkbox" {{isset($registro->publicado) && $registro->publicado == 'sim' ? 'checked' : ''}} value="true"/>
+              <input type="checkbox" name="publicado" {{isset($registro->publicado) && $registro->publicado == 'sim' ? 'checked' : ''}} value="true"/>
               <span>Publicar?</span>
             </label>
           </p>

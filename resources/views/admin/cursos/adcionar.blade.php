@@ -1,6 +1,6 @@
 @extends('layout.tamplate')
 
-@section('titulo','Adcioanr Cursos')
+@section('titulo','Adcionar Cursos')
 
 @section('conteudo')
 <div class="conteiner">
