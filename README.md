@@ -1,4 +1,4 @@
-Projeto tem objetivo aprender Laravel e criar um crud
+Projeto foi feito com proposito de entender e estudar Laravel e API's REST
 
 
 
